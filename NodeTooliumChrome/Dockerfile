@@ -1,5 +1,9 @@
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# NOTE: DO *NOT* EDIT THIS FILE.  IT IS GENERATED.
+# PLEASE UPDATE Dockerfile.txt INSTEAD OF THIS FILE
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 FROM kineticskunk/node-chrome:kineticskunkmaven
-LABEL authors=KineticSkunkHQ
+LABEL authors=KineticSkunk
 
 #====================================
 # Install Toolium and required tools

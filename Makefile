@@ -1,7 +1,7 @@
 NAME := kineticskunk
 VERSION := $(or $(VERSION),$(VERSION),3.4.0-einsteinium-kineticskunk)
 NAMESPACE := $(or $(NAMESPACE),$(NAMESPACE),$(NAME))
-AUTHORS := $(or $(AUTHORS),$(AUTHORS),SeleniumHQ KineticSkunk)
+AUTHORS := $(or $(AUTHORS),$(AUTHORS),SeleniumHQ-KineticSkunk)
 PLATFORM := $(shell uname -s)
 BUILD_ARGS := $(BUILD_ARGS)
 MAJOR := $(word 1,$(subst ., ,$(VERSION)))
@@ -75,7 +75,7 @@ toolium_firefox: generate_toolium_firefox firefox
 generate_toolium_chrome:
 	cd ./NodeTooliumChrome && ./generate.sh $(VERSION) $(NAMESPACE) $(AUTHORS)
 
-toolium_chrome: generate_maven_chrome chrome
+toolium_chrome: generate_toolium_chrome chrome
 	cd ./NodeTooliumChrome && docker build $(BUILD_ARGS) -t $(NAME)/node-toolium-chrome:$(VERSION) .
 
 generate_chrome_debug:
