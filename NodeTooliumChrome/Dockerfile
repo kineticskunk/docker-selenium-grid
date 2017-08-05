@@ -1,4 +1,4 @@
-FROM kineticskunk/node-chrome:kineticskunk
+FROM kineticskunk/node-chrome:kineticskunkmaven
 LABEL authors=KineticSkunkHQ
 
 #====================================
