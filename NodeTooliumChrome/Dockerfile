@@ -3,7 +3,7 @@
 # PLEASE UPDATE Dockerfile.txt INSTEAD OF THIS FILE
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 FROM kineticskunk/node-chrome:kineticskunkmaven
-LABEL authors=KineticSkunk
+LABEL authors=SeleniumHQ-KineticSkunk
 
 #====================================
 # Install Toolium and required tools

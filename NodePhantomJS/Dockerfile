@@ -3,7 +3,7 @@
 # PLEASE UPDATE Dockerfile.txt INSTEAD OF THIS FILE
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 FROM kineticskunk/node-base:kineticskunkmaven
-LABEL authors=SeleniumHQ
+LABEL authors=SeleniumHQ-KineticSkunk
 
 USER root
 
