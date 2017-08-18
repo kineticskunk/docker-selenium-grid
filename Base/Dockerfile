@@ -2,6 +2,9 @@ FROM ubuntu:16.04
 LABEL authors="Selenium <selenium-developers@googlegroups.com>"
 MAINTAINER Donovan Mulder (donovan.mulder@kineticskunk.com https://www.kineticskunk.com)
 
+ARG selenium_standalone_version=3.0
+ARG selenium_standalone_build=3.0.1
+
 #================================================
 # Customize sources for apt-get
 #================================================
@@ -74,5 +77,5 @@ USER seluser
 #==========
 RUN  sudo mkdir -p /opt/selenium \
   && sudo chown seluser:seluser /opt/selenium \
-  && wget --no-verbose https://selenium-release.storage.googleapis.com/3.4/selenium-server-standalone-3.4.0.jar \
+  && wget --no-verbose https://selenium-release.storage.googleapis.com/$selenium_standalone_version/selenium-server-standalone-$selenium_standalone_build.jar \
     -O /opt/selenium/selenium-server-standalone.jar
