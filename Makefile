@@ -1,5 +1,5 @@
 NAME := kineticskunk
-VERSION := $(or $(VERSION),$(VERSION),3.4.0-einsteinium-kineticskunk)
+VERSION := $(or $(VERSION),$(VERSION),3.0.1-einsteinium-kineticskunk)
 NAMESPACE := $(or $(NAMESPACE),$(NAMESPACE),$(NAME))
 AUTHORS := $(or $(AUTHORS),$(AUTHORS),SeleniumHQ-KineticSkunk)
 PLATFORM := $(shell uname -s)
